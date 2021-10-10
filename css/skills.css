@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.1) , rgba(0, 0, 0, 0.1)) , url(../img/skillsbg.svg);
+    background-size:cover; */
+}
+
+/* ********************************************************************** */
+
+/* ********************************************************************** */
+
+/* ********************************************************************** */
+
+/* ********************************************************************** */
+
+/* ********************************************************************** */
+
+/* ********************************************************************** */
+
+/* ********************************************************************** */
+
+/* ********************************************************************** */
+
+.circlechart {
+  width: 16rem;
+  height: 16rem;
+}
+
+.circle-chart__circle {
+  stroke: #00acc1;
+  stroke-width: 2.2px;
+  stroke-linecap: square;
+  fill: none;
+  animation: circle-chart-fill 2s reverse;
+  /* 1 */
+  transform: rotate(-90deg);
+  /* 2, 3 */
+  transform-origin: center;
+  /* 4 */
+}
+
+/**
+ * 1. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 2. Scaling mirrors the circle to make the stroke move right
+ *    to mark a positive chart value.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround.
+ */
+
+.main-content {
+  /* gap: 6rem; */
+  padding: 2.5rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding-left: 19rem;
+  align-items: center;
+}
+
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(0.5, -0.5);
+  /* 1, 2, 3 */
+}
+
+.circle-chart__background {
+  /* stroke: #422270; */
+  stroke-width: 1.5;
+  /* C*/
+  fill: none;
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+.circle-chart__percent {
+  alignment-baseline: central;
+  text-anchor: middle;
+  font-size: 8px;
+}
+
+.circle-chart__subline {
+  alignment-baseline: central;
+  text-anchor: middle;
+  font-size: 3px;
+  font-weight: 500;
+}
+
+.success-stroke {
+  stroke: #9057e2;
+}
+
+.warning-stroke {
+  stroke: #9057e2;
+}
+
+.danger-stroke {
+  stroke: #9057e2;
+}
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* *************************************  Responsive ******************************* */
+
+@media (max-width: 56.25em) {
+
+  .main-content {
+    padding-left: 8rem;
+  }
+  .subheading {
+    margin-bottom: 0;
+  }
+  /* .main-nav{
+    height: 100%;
+  } */
+
+
+}
+
+@media (max-width :45.625em) {
+  html{
+    font-size: 56.25%;
+  }
+  .main-content {
+    padding-left: 6rem;
+  }
+  .second-row {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width :35.625em) {
+  html {
+    font-size: 50%;
+  }
+  .second-row {
+    gap: 5rem;
+    padding-left: 0;
+    padding-top: 7rem;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 22.8125em) {
+  html {
+    font-size: 62.5%;
+  }
+  
+  .main-content {
+    padding-left: 4rem;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .second-row {
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 0;
+    padding-top: 5rem;
+    gap: 5.6rem;
+  }
+  .circlechart {
+    width: 11rem;
+    height: 11rem;
+  }
+  .main-heading{
+    font-size: 2.5rem;
+  }
+}

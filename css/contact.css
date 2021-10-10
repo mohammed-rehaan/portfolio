@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-content {
+    padding: 2.5rem;
+    padding-left: 20rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.contact-form {
+    background-color: #e6daf9;
+    padding: 4rem;
+    padding-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2.5rem;
+    max-width: 88%;
+    border-radius: 10px;
+    margin-left: 8rem;
+    border-left: 8px solid #8444df;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.contact-heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.social-heading {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    /* border-bottom: 2.5px solid #000; */
+    font-weight: 500;
+}
+
+.social-networks {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.social-logo {
+    height: 5rem;
+    width: 5rem;
+    color: #8444df;
+}
+
+.ion-icon {
+    color: #6a36b2;
+    height: 5rem;
+    width: 5rem;
+}
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    resize: vertical;
+}
+
+input, textarea {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border: none;
+    transition: transform 0.3s, outline 0.2s;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+input:focus, textarea:focus {
+    outline: 3px solid #8444df;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.397);
+    transform: translateY(-0.3rem);
+}
+
+.btn-submit-box {
+    text-align: center;
+}
+
+.btn-submit {
+    border: 2px solid transparent;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    background-color: #8444df;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.397);
+    transition: all 0.2s;
+}
+
+/* .btn-submit:hover{
+    border: 2px solid #8444df;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    background: #fff;
+    color: #8444df;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+.btn-submit:active {
+    transform: translateY(0.2rem);
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.397);
+}
+
+/* ************************** Responsive ************************* */
+
+@media (max-width: 64.5em) {
+    .main-content {
+        padding-left: 15rem;
+    }
+    .contact-form {
+        margin-left: 4rem;
+        max-width: 86%;
+    }
+}
+
+@media (max-width: 56.25em) {
+    .main-content {
+        padding-left: 8rem;
+    }
+    .main-heading {
+        font-size: 2.6rem;
+    }
+    .contact-form {
+        margin-left: 0;
+        max-width: 98%;
+        padding: 2.5rem;
+    }
+    .contact-heading {
+        margin-bottom: 0;
+    }
+    .btn-submit {
+        padding: 0.8rem 2.8rem;
+    }
+    input, textarea {
+        font-size: 1.6rem;
+    }
+    .social-heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .social-networks {
+        padding: 1.5rem 4.5rem;
+    }
+}
+
+@media (max-width: 45.625em) {
+    .main-content {
+        padding-left: 4rem;
+    }
+    .main-heading {
+        font-size: 2.4rem;
+    }
+    .contact-box {
+        gap: 2rem;
+    }
+    .ion-icon {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media (max-width: 35.625em) {
+    .main-content {
+        margin-top: 3rem;
+    }
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    .social-networks {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    input, textarea {
+        font-size: 1.5rem;
+    }
+    .social-heading {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 22.8125em) {
+    .main-content {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 4rem;
+    }
+    .contact-form {
+        padding-left: 1.6rem;
+        padding-bottom: 1.6rem;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .contact-heading {
+        font-size: 2rem;
+    }
+    input, textarea {
+        font-size: 1.4rem;
+        width: 80%;
+    }
+    .social-networks{
+        padding-left: 0;
+    }
+    /* .social-heading{
+        display: none;
+    } */
+    /* .ion-icon {
+        height: 3rem;
+        width: 3rem;
+    } */
+}

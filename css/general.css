@@ -1,0 +1,350 @@
+/* ******************************************************************* */
+
+/* **************     GRID     ****************** */
+
+/* ******************************************************************* */
+
+.grid {
+    display: grid;
+}
+
+.grid--2--cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* ******************************************************************* */
+
+/* **************     Heading     ****************** */
+
+/* ******************************************************************* */
+
+.subheading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 2.5px;
+}
+
+/* ******************************************************************* */
+
+/* **************     Icons     ****************** */
+
+/* ******************************************************************* */
+
+.nav-icon {
+    height: 3rem;
+    color: #F3ECFC;
+}
+
+.round {
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+/* ******************************************************************* */
+
+/* **************     Transition for Links / Classes for Nav Links     ****************** */
+
+/* ******************************************************************* */
+
+.st {
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+/* ******************************************************************* */
+
+/* **************     Container     ****************** */
+
+/* ******************************************************************* */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+
+
+/* ******************************************************************* */
+
+/* **************     Scrollbar     ****************** */
+
+/* ******************************************************************* */
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #dac7f5; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9d69e5; 
+      border-radius: 10px
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8444df; 
+  }
+
+
+
+
+
+
+
+
+/* ******************************************************************* */
+
+/* **************     Navigattion     ****************** */
+
+/* ******************************************************************* */
+
+.main-nav {
+    background-color: #9d69e5;
+    padding: 2rem;
+    padding-left: 1.9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 7.9rem;
+    width: 6.2%;
+    transition: all 0.4s;
+    -webkit-transition: width 0.4s;
+    -moz-transition: width 0.4s;
+    -ms-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 1;
+
+}
+
+.nav-list {
+    list-style: none;
+    color: #000;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-list-item :link, .nav-list-item :visited {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.1s;
+}
+
+.main-nav:hover {
+    margin-right: 0;
+    width: 13%;
+}
+
+.nav-list-item:hover, .nav-list-item:active {
+    background-color: #e6daf9;
+    box-shadow: 0 0.5rem 0.7rem #4f2986;
+}
+
+/* .nav-list-item:focus{
+    background-color: #e6daf9;
+    box-shadow: 0 0.5rem 0.7rem #4f2986;
+} */
+
+input, textarea, button, select, a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.overlay {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 100%;
+}
+
+/* ******************************************************************* */
+
+/* **************     Skills type layout     ****************** */
+
+/* ******************************************************************* */
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #9057e2;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.menu-icon-link:link {
+    display: inline-block;
+    height: 5rem;
+    width: 2rem;
+}
+
+.btn-container {
+    padding: 2rem 0 0 2rem;
+    display: none;
+}
+
+.hamburger {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    background-color: transparent;
+    display: none;
+    position: fixed;
+}
+
+.cross {
+    font-size: 4.2rem;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Underline animation */
+
+.main-heading:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: #8444df;
+    -webkit-animation-name: border;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-name: border;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+
+
+
+/* ******************************************************************* */
+
+/* **************    Responsive    ****************** */
+
+/* ******************************************************************* */
+
+@media (max-width: 75em) {
+    html {
+        font-size: 62.5%;
+    }
+    .main-nav {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 64.5em) {
+    html {
+        font-size: 62.5%;
+    }
+    .main-nav {
+        padding-left: 0.5rem;
+    }
+    .main-nav:hover {
+        width: 15%;
+    }
+}
+
+@media (max-width: 56.25em) {
+    html {
+        font-size: 62.5%;
+    }
+    .main-nav {
+        transform: translateX(-100%);
+
+
+    }
+    .container {
+        grid-template-columns: auto 1fr;
+    }
+    .hamburger, .btn-container {
+        display: block;
+    }
+}
+
+/* 
+    fontsizes:
+    -subheading:1.4rem;
+    -nav-list-item:1.5rem
+*/
+
+/* 
+colors:
+-maincolor:#8444df
+-tints: 
+-shades: 
+
+*/

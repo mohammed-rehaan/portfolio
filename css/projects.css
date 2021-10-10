@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-content {
+    padding: 2.5rem;
+    padding-left: 20rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.project-card {
+    padding: 1.5rem 3rem;
+    border-radius: 9px;
+    max-width: 75%;
+    box-shadow: 0 1.4rem 2rem rgba(0, 0, 0, 0.267);
+    border: 1px solid #8544df4b;
+    align-self: center;
+}
+
+.projects-row {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 8rem;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #8444df;
+}
+
+/* .card-title:after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 0.8rem;
+    height: 2px;
+    width: 0px;
+    background: #8444df;  
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: border;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+
+  }
+  @keyframes border {
+    from {width: 0%;}
+    to {width:100%}
+} */
+
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card-text-box {
+    word-wrap: wrap;
+    font-size: 2rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.card-img {
+    height: 20rem;
+    border-radius: 9px;
+    border: 1px solid #8544df4b;
+    
+}
+
+/* **************************   LINKS   *********************** */
+
+.links {
+    display: flex;
+    gap: 3rem;
+    font-weight: 500;
+}
+
+
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: #8444df;
+    overflow: hidden;
+    border-bottom: 2px solid transparent;
+}
+ .underline{
+    border-bottom: 2px solid #8444df;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+
+.link:hover .underline{
+    transform: translateX(0);
+}
+
+
+
+/* ****************** Responsive ***************************** */
+
+@media (max-width: 75em){
+    .card-text-box{
+        padding-top: 0;
+        font-size: 1.8rem;
+    }
+    
+}
+@media (max-width: 68.75em){
+    .card-content {
+    grid-template-columns: 1fr;
+    }
+    .card-img-box {
+        justify-self: center;
+    }
+    .card-img{
+        height: 18rem;
+    }
+    .project-card {
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 56.25em){
+
+    .main-content{
+        padding-left: 6.5rem;
+        gap: 4.5rem;
+    }
+    .project-card {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .card-title{
+        padding-top: 0;
+        font-size: 2.4rem;
+        margin-bottom: 2.7rem;
+
+    }
+    .card-text-box {
+        gap: 1.6rem;
+        padding-bottom: 0;
+        font-size: 1.9rem;
+    }
+    .card-img{
+        height: 16rem;
+    }
+
+    .main-heading{
+        font-size: 2.6rem;
+    }
+    .projects-row {
+        gap: 6rem;
+    }
+    
+
+}
+@media (max-width: 45.625em){
+    .project-card {
+        max-width: 100%;
+    }
+    .card-title{
+        font-size: 2.2rem;
+        margin-bottom: 2.3rem;
+    }
+    .card-text-box {
+        font-size: 1.7rem;
+    }
+    .card-img{
+        height: 15rem;
+    }
+    .main-content{
+        padding-left: 4rem;
+    }
+    .main-heading{
+        font-size: 2.4rem;
+    }
+    .projects-row {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 35.625em){
+    .main-content{
+        margin-top: 3rem;
+    }
+    .card-text-box{
+        padding: 0;
+    }
+}
+
+@media (max-width: 22.8125em){
+    .main-content{
+        padding-left: 1rem;
+        padding-right: 0;
+        margin-right: 4rem;
+    }
+    .card-text-box{
+        font-size: 1.5rem;
+    }
+    .card-title{
+        font-size: 2rem;
+    }
+    .card-img{
+        height: 13rem;
+    }
+}
