@@ -206,9 +206,9 @@ input:focus, textarea:focus {
     }
 }
 
-@media (max-width: 22.8125em) {
+@media (max-width: 23.75em) {
     .main-content {
-        padding-left: 0;
+        padding-left: 4rem;
         padding-right: 0;
         margin-right: 4rem;
     }

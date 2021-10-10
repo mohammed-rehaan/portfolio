@@ -216,7 +216,7 @@ body {
     }
 }
 
-@media (max-width: 22.8125em){
+@media (max-width: 23.75em){
     .main-content{
         padding-left: 1rem;
         padding-right: 0.5rem;
