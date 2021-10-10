@@ -219,8 +219,7 @@ body {
 @media (max-width: 22.8125em){
     .main-content{
         padding-left: 1rem;
-        padding-right: 0;
-        margin-right: 4rem;
+        padding-right: 0.5rem;
     }
     .card-text-box{
         font-size: 1.5rem;

@@ -164,6 +164,17 @@ body {
   }
 }
 
+@media (max-width: 27.875em){
+  .second-row{
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 0;
+    padding-top: 5rem;
+    padding-left: 4.5rem;
+    gap: 5.6rem;
+
+  }
+}
+
 @media (max-width: 22.8125em) {
   html {
     font-size: 62.5%;
@@ -175,9 +186,9 @@ body {
     margin-top: 2.5rem;
   }
   .second-row {
-    grid-template-columns: repeat(2, 1fr);
     padding-right: 0;
     padding-top: 5rem;
+    padding-left: 0;
     gap: 5.6rem;
   }
   .circlechart {
