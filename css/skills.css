@@ -167,7 +167,7 @@ body {
 @media (max-width: 27.875em){
   .second-row{
     grid-template-columns: repeat(2, 1fr);
-    padding-right: 0;
+    padding-right: 0rem;
     padding-top: 5rem;
     padding-left: 3.5rem;
     gap: 5.6rem;
