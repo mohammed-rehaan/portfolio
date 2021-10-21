@@ -43,6 +43,34 @@ body {
     color: #8444df;
 }
 
+/* ------------------------------------------------------------ */
+.links {
+    display: flex;
+    gap: 3rem;
+    font-weight: 500;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: #8444df;
+    overflow: hidden;
+    border-bottom: 2px solid transparent;
+}
+
+.underline {
+    border-bottom: 2px solid #8444df;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+
+.link:hover .underline {
+    transform: translateX(0);
+}
+
+
+/* ********************responsive*************** */
+
 @media (max-width: 64.5em) {
     .main-content {
         gap: 4rem;
