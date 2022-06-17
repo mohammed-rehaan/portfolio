@@ -1,235 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8444df" />
+    <meta name="msapplication-navbutton-color" content="#8444df" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#8444df" />
 
-    <meta name="theme-color" content="#8444df">
-    <meta name="msapplication-navbutton-color" content="#8444df">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#8444df">
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-
-    <link rel="stylesheet" href="../css/general.css">
-    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <title>Projects</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="btn-container">
-            <button class="hamburger"> <img src="../icons/menu-icon.svg" alt="hamburger icon"> </button>
+      <div class="btn-container">
+        <button class="hamburger">
+          <img src="../icons/menu-icon.svg" alt="hamburger icon" />
+        </button>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <button class="cross hidden">&times;</button>
+
+        <ul class="nav-list">
+          <li class="nav-list-item round st">
+            <a href="../index.html">
+              <img
+                src="../icons/house-icon.svg"
+                alt="home-icon"
+                class="nav-icon"
+              />
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-list-item round st">
+            <a href="../html/skills.html"
+              ><img
+                src="../icons/skills-icon.svg"
+                alt="skills-icon"
+                class="nav-icon"
+              />
+              <span class="nav-text">Skills</span>
+            </a>
+          </li>
+          <li class="nav-list-item round st">
+            <a href="../html/projects.html">
+              <img
+                src="../icons/projects-icon.svg"
+                alt="projects-icon"
+                class="nav-icon"
+              /><span class="nav-text">Projects</span>
+            </a>
+          </li>
+          <li class="nav-list-item round st">
+            <a href="../html/resume.html">
+              <img
+                src="../icons/resume-icon.svg"
+                alt="resume-icon"
+                class="nav-icon"
+              />
+              <span class="nav-text">Resume</span>
+            </a>
+          </li>
+          <li class="nav-list-item round st">
+            <a href="../html/about.html"
+              ><img
+                src="../icons/about-icon.svg"
+                alt="about-icon"
+                class="nav-icon"
+              />
+              <span class="nav-text">About</span>
+            </a>
+          </li>
+          <li class="nav-list-item round st">
+            <a href="../html/contact.html">
+              <img
+                src="../icons/contact-icon.svg"
+                alt="contact-icon"
+                class="nav-icon"
+              />
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- **************************************************************** -->
+      <!-- **************************************************************** -->
+      <!-- **************************************************************** -->
+      <!-- **************************************************************** -->
+      <!-- **************************************************************** -->
+      <!-- **************************************************************** -->
+
+      <div class="main-content">
+        <div class="text-box">
+          <p class="subheading">&mdash; Visit my</p>
+          <p class="main-heading">Projects</p>
         </div>
-        <nav class="main-nav" id="main-nav">
-            <button class="cross hidden"> &times; </button>
 
-            <ul class="nav-list">
-                <li class="nav-list-item round st"> <a href="../index.html"> <img src="../icons/house-icon.svg"
-                            alt="home-icon" class="nav-icon"> <span class="nav-text">Home</span> </a> </li>
-                <li class="nav-list-item round st"> <a href="../html/skills.html"><img src="../icons/skills-icon.svg"
-                            alt="skills-icon" class="nav-icon"> <span class="nav-text">Skills</span>
-                    </a> </li>
-                <li class="nav-list-item round st"> <a href="../html/projects.html"> <img
-                            src="../icons/projects-icon.svg" alt="projects-icon" class="nav-icon"><span
-                            class="nav-text">Projects</span>
-                    </a> </li>
-                <li class="nav-list-item round st"> <a href="../html/resume.html"> <img src="../icons/resume-icon.svg"
-                            alt="resume-icon" class="nav-icon"> <span class="nav-text">Resume</span>
-                    </a> </li>
-                <li class="nav-list-item round st"> <a href="../html/about.html"><img src="../icons/about-icon.svg"
-                            alt="about-icon" class="nav-icon"> <span class="nav-text">About</span> </a> </li>
-                <li class="nav-list-item round st"> <a href="../html/contact.html"> <img src="../icons/contact-icon.svg"
-                            alt="contact-icon" class="nav-icon">
-                        <span class="nav-text">Contact</span> </a> </li>
-            </ul>
-        </nav>
-
-
-
-        <!-- **************************************************************** -->
-        <!-- **************************************************************** -->
-        <!-- **************************************************************** -->
-        <!-- **************************************************************** -->
-        <!-- **************************************************************** -->
-        <!-- **************************************************************** -->
-
-
-
-        <div class="main-content">
-            <div class="text-box">
-                <p class="subheading">&mdash; Visit my </p>
-                <p class="main-heading">Projects</p>
+        <div class="project-card">
+          <div class="card-title">Mapty</div>
+          <div class="card-content">
+            <div class="card-img-box">
+              <img
+                class="card-img"
+                src="../img/mapty.png"
+                alt="Project image"
+              />
             </div>
-
-
-
-            <div class="project-card">
-                <div class="card-title">Tic Tac Toe (AI implemented)</div>
-                <div class="card-content">
-                    <div class="card-img-box">
-                        <img class="card-img" src="../img/tictactoe.png" alt="Project image">
-                    </div>
-                    <div class="card-text-box">
-                        <p class="card-text">A simple tic tac toe game between a player and AI made using python. The AI
-                            blocks each and every win of the player and won't let the player win. There are only two
-                            possibilities, Either the game is a tie or the player loses the game😂</p>
-                        <div class="links">
-                            <a href="https://github.com/mohammed-rehaan/Tic-Tac-Toe-AI-implemented" target="blank" class="link">Source
-                                Code <div class="underline"></div></a>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="card-text-box">
+              <p class="card-text">
+                A map where you can mark the location for cycling and running.
+                You will enjoy it and probably start running or cycling 😜
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/mohammed-rehaan/Mapty"
+                  target="blank"
+                  class="link"
+                  >Source Code
+                  <div class="underline"></div
+                ></a>
+              </div>
             </div>
-
-            <!-- mini projects D-->
-            <div class="project-card">
-                <div class="card-title">Mini Javascript Projects</div>
-                <div class="card-content">
-                    <div class="card-img-box">
-                        <img class="card-img" src="../img/miniprojects.png" alt="Project image">
-                    </div>
-                    <div class="card-text-box">
-                        <p class="card-text">These are some of my Mini projects made while learning Javascript.
-                            These projects include some useful features that can be implemented using js in our
-                            websites / webapps and some on the go games that you can play without the need of
-                            downloading them 😃😃😃</p>
-                        <div class="links">
-                            <a href="../html/mini-projects.html" target="blank" class="link">View Projects<div
-                                    class="underline"></div></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- third D-->
-            <div class="project-card">
-                <div class="card-title">Omnifood Project 2.0 (cloned)</div>
-                <div class="card-content">
-                    <div class="card-img-box">
-                        <img class="card-img" src="../img/omnifood2.png" alt="Project image">
-                    </div>
-                    <div class="card-text-box">
-                        <p class="card-text">The smart 365-days-per-year food 🍴 subscription that will make you eat
-                            healthy again. Tailored to your personal tastes and nutritional needs. I made this after
-                            learning HTML and CSS </p>
-                        <div class="links">
-                            <a href="https://github.com/mohammed-rehaan/Omnifood-2.0" target="blank" class="link">Source
-                                Code <div class="underline"></div></a>
-                            <a href="https://mohammed-rehaan.github.io/Omnifood-2.0/" target="blank" class="link">Visit
-                                Live <div class="underline"></div></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- fourth D-->
-            <div class="project-card">
-                <div class="card-title">Agriculture</div>
-                <div class="card-content">
-                    <div class="card-img-box">
-                        <img class="card-img" src="../img/agriculture.png" alt="Project image">
-                    </div>
-                    <div class="card-text-box">
-                        <p class="card-text">A smart agricultural site that spreads knowledge of crop production,
-                            has solutions related to crop protection and spreads awareness about smart farming 🚜
-                        </p>
-                        <div class="links">
-                            <a href="https://github.com/mohammed-rehaan/Agriculture" target="blank" class="link">Source
-                                Code <div class="underline"></div></a>
-                            <a href="https://agriculture-crops.herokuapp.com/" target="blank" class="link">Visit
-                                Live <div class="underline"></div></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- fifth-->
-            <div class="project-card">
-                <div class="card-title">Student Registration</div>
-                <div class="card-content">
-                    <div class="card-img-box">
-                        <img class="card-img" src="../img/student-registration.jpg" alt="Project image">
-                    </div>
-                    <div class="card-text-box">
-                        <p class="card-text">A simple webapp where students can register for a specific semester in
-                            PDA college of engineering based on their USN number. One can also check their
-                            registration status</p>
-                        <div class="links">
-                            <a href="https://github.com/mohammed-rehaan/student-registration" target="blank"
-                                class="link">Source Code <div class="underline"></div></a>
-                            <!-- <a href="#" target="blank"  class="link">Visit Live <div class="underline"></div></a> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- sixth-->
-            <div class="project-card">
-                <div class="card-title">My Very First Webapp</div>
-                <div class="card-content">
-                    <div class="card-img-box">
-                        <img class="card-img" src="../img/first-webapp.png" alt="Project image">
-                    </div>
-                    <div class="card-text-box">
-                        <p class="card-text"> This is my very first webapp after learning MySQL, even before
-                            learning HTML and CSS. Not so good looking but has a database connected and the number
-                            displayed on the page gets updated with each signup</p>
-                        <div class="links">
-                            <a href="https://github.com/mohammed-rehaan/first-webapp" target="blank" class="link">Source
-                                Code <div class="underline"></div></a>
-                            <!-- <a href="#" target="blank" class="link">Visit Live <div class="underline"></div></a> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
+          </div>
         </div>
+
+        <div class="project-card">
+          <div class="card-title">Tic Tac Toe (AI implemented)</div>
+          <div class="card-content">
+            <div class="card-img-box">
+              <img
+                class="card-img"
+                src="../img/tictactoe.png"
+                alt="Project image"
+              />
+            </div>
+            <div class="card-text-box">
+              <p class="card-text">
+                A simple tic tac toe game between a player and AI made using
+                python. The AI blocks each and every win of the player and won't
+                let the player win. There are only two possibilities, Either the
+                game is a tie or the player loses the game😂
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/mohammed-rehaan/Mapty"
+                  target="blank"
+                  class="link"
+                  >Source Code
+                  <div class="underline"></div
+                ></a>
+                <a
+                  href="https://mohammed-rehaan.github.io/Mapty/"
+                  target="blank"
+                  class="link"
+                  >Visit Live
+                  <div class="underline"></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- mini projects D-->
+        <div class="project-card">
+          <div class="card-title">Mini Javascript Projects</div>
+          <div class="card-content">
+            <div class="card-img-box">
+              <img
+                class="card-img"
+                src="../img/miniprojects.png"
+                alt="Project image"
+              />
+            </div>
+            <div class="card-text-box">
+              <p class="card-text">
+                These are some of my Mini projects made while learning
+                Javascript. These projects include some useful features that can
+                be implemented using js in our websites / webapps and some on
+                the go games that you can play without the need of downloading
+                them 😃😃😃
+              </p>
+              <div class="links">
+                <a href="../html/mini-projects.html" target="blank" class="link"
+                  >View Projects
+                  <div class="underline"></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- third D-->
+        <div class="project-card">
+          <div class="card-title">Omnifood Project 2.0 (cloned)</div>
+          <div class="card-content">
+            <div class="card-img-box">
+              <img
+                class="card-img"
+                src="../img/omnifood2.png"
+                alt="Project image"
+              />
+            </div>
+            <div class="card-text-box">
+              <p class="card-text">
+                The smart 365-days-per-year food 🍴 subscription that will make
+                you eat healthy again. Tailored to your personal tastes and
+                nutritional needs. I made this after learning HTML and CSS
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/mohammed-rehaan/Omnifood-2.0"
+                  target="blank"
+                  class="link"
+                  >Source Code
+                  <div class="underline"></div
+                ></a>
+                <a
+                  href="https://mohammed-rehaan.github.io/Omnifood-2.0/"
+                  target="blank"
+                  class="link"
+                  >Visit Live
+                  <div class="underline"></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth D-->
+        <div class="project-card">
+          <div class="card-title">Agriculture</div>
+          <div class="card-content">
+            <div class="card-img-box">
+              <img
+                class="card-img"
+                src="../img/agriculture.png"
+                alt="Project image"
+              />
+            </div>
+            <div class="card-text-box">
+              <p class="card-text">
+                A smart agricultural site that spreads knowledge of crop
+                production, has solutions related to crop protection and spreads
+                awareness about smart farming 🚜
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/mohammed-rehaan/Agriculture"
+                  target="blank"
+                  class="link"
+                  >Source Code
+                  <div class="underline"></div
+                ></a>
+                <a
+                  href="https://agriculture-crops.herokuapp.com/"
+                  target="blank"
+                  class="link"
+                  >Visit Live
+                  <div class="underline"></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- fifth-->
+        <div class="project-card">
+          <div class="card-title">Student Registration</div>
+          <div class="card-content">
+            <div class="card-img-box">
+              <img
+                class="card-img"
+                src="../img/student-registration.jpg"
+                alt="Project image"
+              />
+            </div>
+            <div class="card-text-box">
+              <p class="card-text">
+                A simple webapp where students can register for a specific
+                semester in PDA college of engineering based on their USN
+                number. One can also check their registration status
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/mohammed-rehaan/student-registration"
+                  target="blank"
+                  class="link"
+                  >Source Code
+                  <div class="underline"></div
+                ></a>
+                <!-- <a href="#" target="blank"  class="link">Visit Live <div class="underline"></div></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- sixth-->
+        <div class="project-card">
+          <div class="card-title">My Very First Webapp</div>
+          <div class="card-content">
+            <div class="card-img-box">
+              <img
+                class="card-img"
+                src="../img/first-webapp.png"
+                alt="Project image"
+              />
+            </div>
+            <div class="card-text-box">
+              <p class="card-text">
+                This is my very first webapp after learning MySQL, even before
+                learning HTML and CSS. Not so good looking but has a database
+                connected and the number displayed on the page gets updated with
+                each signup
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/mohammed-rehaan/first-webapp"
+                  target="blank"
+                  class="link"
+                  >Source Code
+                  <div class="underline"></div
+                ></a>
+                <!-- <a href="#" target="blank" class="link">Visit Live <div class="underline"></div></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="../js/navigation.js"></script>
-
-</body>
-
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- <div class="project-card">
     <div class="card-title">Mini Javascript Projects</div>
